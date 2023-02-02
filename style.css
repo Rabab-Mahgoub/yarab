@@ -1,0 +1,306 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-parent{
+    border:2px solid #3d4a59;
+    border-bottom-left-radius:70px;
+    border-bottom-right-radius:70px;
+    background-color: #3d4a59;
+   
+}
+.nav-parent h1{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size:40px;
+    font-weight: bold;
+    color: white;
+}
+.nav-parent .links{
+    width: 90%;
+    height:auto;
+    margin: auto;
+    margin-top: 30px;
+}
+ ul ,a{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    justify-content:space-around;
+    font-size: 20px;
+    color: white;
+    
+   
+    
+}
+.mode{
+    background-color: #3d4a59;
+    color: white;
+    width: 130px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+   
+    
+
+}
+ ul li :hover {
+    text-decoration: none;
+    color: white;
+   width: 140px;
+    background-color: #f98958 ;
+  ;
+
+}
+ ul li .mode:hover{
+    background-color:#f98958  ;
+}
+/* who i am section*/
+.who-parent{
+    border:2px solid white;
+    width: 95%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:100px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 8px  rgb(177, 168, 168);
+    
+
+}
+.who-parent .header{
+    width: 45%;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border-radius:20px  ;
+    background-color: #f98958;
+    text-align: center;
+    color: white;
+}
+.target-parent{
+    height:380px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 300px 300px;
+  
+    justify-content: center;
+  
+
+   
+
+}
+.target{
+ 
+   
+  
+    transform: translate(-40px,60px);
+   
+
+}
+.target h4{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+   
+}
+.target p{
+    margin: auto;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.target button{ 
+    margin-top: 20px;
+    margin:10px;   
+}
+.my-image{
+   
+  
+    text-align: center;
+    transform: translate(0px,60px);
+  
+}
+
+ img{
+    height: 180px;
+    width:180px;
+    border: 5px solid   #e89b44 ;
+    border-radius: 50%;
+}
+.my-name{
+    font-family: 'Petit Formal Script', cursive;
+}
+/* المميز*/
+.special{
+    height: 170px;
+}
+.special-header{
+    width: 45%;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border-radius:20px  ;
+    background-color: #f98958;
+    text-align: center;
+    font-size:30px ;
+    color: white;
+
+}
+.follow{
+    height:70px;
+    text-align: center;
+    padding: 12px;
+}
+.facebook{
+    background-color: white;
+    color: rgb(154, 61, 139);
+    border: 2px solid rgb(133, 125, 125);
+}
+.footer{
+    margin-top: 20px;
+    height: 60px;
+    padding: 15px;
+    background-color: #3d4a59;
+    border-top-left-radius:70px;
+    border-top-right-radius:70px;
+
+}
+h5{
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+  
+    color: white;
+ 
+
+}
+@media screen and (max-width:915px) {
+    .special-header{
+        font-size: 27px;
+    }
+    
+}
+
+@media screen and (max-width:730px) {
+    .special-header{
+        font-size: 20px;
+    }
+    
+}
+/* target*/
+@media screen and(max-width:720px)
+{
+    .target{
+        background-color: #3d4a59;
+    }
+    .social{
+        background-color: #4073a6;
+        flex-direction: column;
+    }
+    .social button{
+        width:50%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    
+    
+}
+
+
+@media screen and (max-width:600px){
+    .container-fluid ul,.mode{
+        display:block;
+        margin:10px;
+       
+    }
+    .mode{
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+}
+
+
+@media screen and (max-width:580px) {
+    .target-parent{
+        grid-template-columns:1fr;
+        grid-template-rows:200px 170px;
+        justify-content: center;
+    }
+    .target{
+        transform: translate(0px,2px);
+    }
+    .target h4{
+        font-size: 14px;
+        border:  2px solid black;
+       
+    }
+    .social button{width: 100px;}
+    .my-image{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        transform: translate(0px,0px);
+    }
+    img
+    {
+        width: 120px; 
+        height: 120px;
+        
+    }
+    .my-name,p,button,span,h5{
+        font-size: 14px;
+        
+
+    }
+    .facebook{
+        height:40px ;
+        font-size: 12px;
+       
+    }
+   
+
+}
+@media screen and (max-width:480px){
+     h1{
+      
+        font-size:24px ;
+    }
+     a,.mode{font-size: 18px;}
+    .special-header{
+        font-size: 12px;
+    }
+    
+}
+@media screen and (max-width:350px) {
+    .who-parent .header{
+        font-size:18px;
+    }
+    p{font-size: 10px;}
+    .social button{
+        font-size: 12px;
+        width:80px;
+        height: 30px;
+    }
+    span , h5{
+        font-size: 10px;
+    }
+    
+   
+    
+}
+
